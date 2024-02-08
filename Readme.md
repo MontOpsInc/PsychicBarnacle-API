@@ -156,3 +156,22 @@ When a field looks like it has trend, it is good to know if it is reliable or no
 Don't leave your audience hanging, what do we do with what we just learned? What's given is a concise Prescription of what we learned, and what to do with the Insights. 
 ![Alt text](./tutorial_images/Prescription.png)
 
+## Troubleshooting
+
+### API Key may not be recognized
+Contact nik@montops.ai to verify or configure a valid uid
+
+### Number of runs might be out
+Trials limited to 5 runs and 10MB limit, and more runs/larger datasets are on a by-case and purchase basis. Contact nik@montops.ai to verify remaining number of runs or further details.
+
+### Dataset might be too large
+On a trial run, datasets are limited to 5 runs and 10MB to proof of concept before purchasing. If the dataset exceeds the limit, try partitioning down to a sub-set that is <10MB. 
+
+### Timeout
+On larger sets, Psychic Barnacle has to first generate Barn Effect values, then the tables, then write about them. On average that process should take less than 60 seconds, but sometimes Barnacle needs a little time to breathe.. consider adjusting the "wait_time" in your config file to a slightly higher number. 
+
+### Other
+Contact nik@montops.ai for further detail. Make sure you have your "key" generated from the API command so our team can help you troubleshoot for more specific issues. 
+
+# Thank You
+Thank you for reading about, supporting, and/or showing interest in Psychic Barnacle, and the Barn Effect! For anything further, please contact nik@montops.ai. MontOps is looking forward to seeing you in action and the insights you uncover!
