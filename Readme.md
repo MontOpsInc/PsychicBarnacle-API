@@ -1,5 +1,5 @@
 # Psychic Barnacle, How-To
-Welcome to Psychic Barnacle, a system that understands any system. 
+Welcome to Psychic Barnacle, an honest system that understands any system. 
 
 ## What Psychic Barnacle Does
 Input your dataset, and Barnacle does the heavy lifting, giving data analysis insight instantaneously. Using proprietary math, the insights show direct effects on an outcome. 
