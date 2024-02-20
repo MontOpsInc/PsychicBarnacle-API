@@ -18,23 +18,23 @@ A good analogy for how the math works is, "If you are a player on a sports team,
 Once configured, define your config file that will be used as Psychic Barnacle runs.
 
 ### Necessary fields to define are:
-- uid: a valid User ID 
-- barnacle_depth: a dictionary object defining column "intelligent binning" depths for Barnacle to mapt with. "main": int, must be in every barnacle_depth dict. Define additional columns with individual depths, otherwise columns default to "main". Example is: 'barnacle_depth': {'main': 5, 'month': 12, 'day': 31}
-- cols_to_drop: a list of columns not to include in analysis, but which will be included in output dataset from the api
-- data_type: ".csv" or ".parquet"
-- path: path to data file, i.e. data/input.csv
-- save_name: desired save name for the outputs of Barnacle, i.e. data/successfully_barned.csv
-- target: name of the column to understand, i.e. "Converted"
-- wait_time: integer value, the time to give Barnacle to breathe, talk to the data gods, and give insights back in time. Good value is usually 60 (seconds)
+- *uid*: a valid User ID 
+- *barnacle_depth*: a dictionary object defining column "intelligent binning" depths for Barnacle to mapt with. "main": int, must be in every barnacle_depth dict. Define additional columns with individual depths, otherwise columns default to "main". Example is: 'barnacle_depth': {'main': 5, 'month': 12, 'day': 31}
+- *cols_to_drop*: a list of columns not to include in analysis, but which will be included in output dataset from the api
+- *data_type*: ".csv" or ".parquet"
+- *path*: path to data file, i.e. data/input.csv
+- *save_name*: desired save name for the outputs of Barnacle, i.e. data/successfully_barned.csv
+- *target*: name of the column to understand, i.e. "Converted"
+- *wait_time*: integer value, the time to give Barnacle to breathe, talk to the data gods, and give insights back in time. Good value is usually 60 (seconds)
 
 
 ### Optional fields to define are:
-- comments: list of comments in return config file to note findings
-- partition_by: column to partition dataset by and prevent data leakage. Some good examples would be "Campaign" in a Marketing campaign, "State" for a geographic healthcare dataset, etc.
-- displays: a dictionary object with mandatory fields that help Natural Language generated insights:
-  - target: a natural sounding target to explain the target in "Necessary Fields", i.e. for "Converted", the target here could be "Lead Converted, Yes/No"
-  - success_metric: a natural sounding indicator of success, i.e. "Higher conversion is good"
-  - green_is_up: for coloring, sometimes green is good, but the values need to match. On the color scale, green_is_up is True will have green as a "good value" (for example, higher Sales), otherwise False has green as lower values, which could be seen as good (for example, higher volatility is bad, therefore green should go on bottom)
+- *comments*: list of comments in return config file to note findings
+- *partition_by*: column to partition dataset by and prevent data leakage. Some good examples would be "Campaign" in a Marketing campaign, "State" for a geographic healthcare dataset, etc.
+- *displays*: a dictionary object with mandatory fields that help Natural Language generated insights:
+  - *target*: a natural sounding target to explain the target in "Necessary Fields", i.e. for "Converted", the target here could be "Lead Converted, Yes/No"
+  - *success_metric*: a natural sounding indicator of success, i.e. "Higher conversion is good"
+  - *green_is_up*: for coloring, sometimes green is good, but the values need to match. On the color scale, green_is_up is True will have green as a "good value" (for example, higher Sales), otherwise False has green as lower values, which could be seen as good (for example, higher volatility is bad, therefore green should go on bottom)
 
 
 ## Example config file
