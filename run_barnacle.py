@@ -5,10 +5,13 @@ objective: Run Psychic Barnacle on the API
 """
 
 
-import os
-import requests
 import json
-import time 
+import os
+import time
+import webbrowser
+
+import requests
+from tqdm import tqdm
 
 
 def run_barnacle(config):
@@ -17,9 +20,9 @@ def run_barnacle(config):
 	API URL Endpoint
 	"""
 	api_url = "https://75agyozjrd.execute-api.us-west-1.amazonaws.com/dev"
-	
-	
-	
+
+
+
 	"""
 	Post request to get pre-signed URL's to upload data and config(secure)
 	"""
@@ -42,10 +45,10 @@ def run_barnacle(config):
 	pre_signed_config = response.json()["url_config"]
 	response_for_config = requests.put(pre_signed_config, data=json.dumps(config))
 
-	# Upload data 
+	# Upload data
 	pre_signed_data = response.json()["url_data"]
 	with open(config["path"], "rb") as f:
-		response_for_df = requests.put(pre_signed_data, data=f) 
+		response_for_df = requests.put(pre_signed_data, data=f)
 
 
 
@@ -62,8 +65,11 @@ def run_barnacle(config):
 	Download the results from s3, which also deletes the files from s3
 	"""
 	seconds = config["wait_time"]
-	print("Patiently giving Psychic Barnacle %d seconds to breathe,\n talk to the data gods, and complete work..."%seconds)
-	time.sleep(seconds)  # wait for the function to finish
+	# Define the total number of iterations (60 seconds)
+	total_iterations = seconds
+	# Create a tqdm progress bar that updates every second
+	for _ in tqdm(range(total_iterations), desc="Processing", unit="sec"):
+		time.sleep(1)  # Wait for one second
 
 
 	# Get pre-signed url for download
@@ -78,8 +84,11 @@ def run_barnacle(config):
 		# Download the file
 		response = requests.get(pre_signed_download)
 		file_save_path = os.path.join(config["save_name"])
+		os.makedirs(os.path.dirname(file_save_path), exist_ok=True)
 		with open(file_save_path, 'wb') as file:
-			file.write(response.content) 
-	except:
+			file.write(response.content)
+		print(f"File saved to {file_save_path}")
+		webbrowser.open(f"file://{os.path.abspath(file_save_path)}")
+	except Exception as e:
 		print(response_for_download_url.json())
-		return
+		raise e
