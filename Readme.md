@@ -7,9 +7,9 @@ A good analogy for how the math works is, "If you are a player on a sports team,
 
 ## Prerequisites
 - Make sure you have an API key for access
-  - Email nik@montops.ai to get configured, to receive "uid"
+  - Email nik@mont-ops.com to get configured, to receive "uid"
   - Free trial starts by giving 5 successful runs, for datasets <10MB 
-    - After free trial runs are over, email nik@montops.ai to purchase more runs at larger data sizes
+    - After free trial runs are over, email nik@mont-ops.com to purchase more runs at larger data sizes
 - If using Python:
   - Have Python 3.6+ installed on your computer
 - Alternative is to use curl
