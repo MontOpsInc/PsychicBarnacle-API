@@ -162,7 +162,7 @@ Don't leave your audience hanging, what do we do with what we just learned? What
 Contact nik@mont-ops.com to verify or configure a valid uid
 
 ### Number of runs might be out
-Trials limited to 5 runs and 10MB limit, and more runs/larger datasets are on a by-case and purchase basis. Contact nik@montops.ai to verify remaining number of runs or further details.
+Trials limited to 5 runs and 10MB limit, and more runs/larger datasets are on a by-case and purchase basis. Contact nik@mont-ops.com to verify remaining number of runs or further details.
 
 ### Dataset might be too large
 On a trial run, datasets are limited to 5 runs and 10MB to proof of concept before purchasing. If the dataset exceeds the limit, try partitioning down to a sub-set that is <10MB. 
