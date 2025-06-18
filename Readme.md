@@ -1,5 +1,5 @@
 # Psychic Barnacle, How-To
-Welcome to Psychic Barnacle, an honest system that understands any system. 
+Welcome to Psychic Barnacle, an honest system that understands any system. Visit our website at https://mont-ops.com for more information.
 
 ## What Psychic Barnacle Does
 Input your dataset, and Barnacle does the heavy lifting, giving data analysis insight instantaneously. Using proprietary math, the insights show direct effects on an outcome. 
@@ -159,7 +159,7 @@ Don't leave your audience hanging, what do we do with what we just learned? What
 ## Troubleshooting
 
 ### API Key may not be recognized
-Contact nik@montops.ai to verify or configure a valid uid
+Contact nik@mont-ops.com to verify or configure a valid uid
 
 ### Number of runs might be out
 Trials limited to 5 runs and 10MB limit, and more runs/larger datasets are on a by-case and purchase basis. Contact nik@montops.ai to verify remaining number of runs or further details.
@@ -171,7 +171,7 @@ On a trial run, datasets are limited to 5 runs and 10MB to proof of concept befo
 On larger sets, Psychic Barnacle has to first generate Barn Effect values, then the tables, then write about them. On average that process should take less than 60 seconds, but sometimes Barnacle needs a little time to breathe.. consider adjusting the "wait_time" in your config file to a slightly higher number. 
 
 ### Other
-Contact nik@montops.ai for further detail. Make sure you have your "key" generated from the API command so our team can help you troubleshoot for more specific issues. 
+Contact nik@mont-ops.com for further detail. Make sure you have your "key" generated from the API command so our team can help you troubleshoot for more specific issues. 
 
 # Thank You
-Thank you for reading about, supporting, and/or showing interest in Psychic Barnacle, and the Barn Effect! For anything further, please contact nik@montops.ai. MontOps is looking forward to seeing you in action and the insights you uncover!
+Thank you for reading about, supporting, and/or showing interest in Psychic Barnacle, and the Barn Effect! For anything further, please contact nik@mont-ops.com. MontOps is looking forward to seeing you in action and the insights you uncover!
